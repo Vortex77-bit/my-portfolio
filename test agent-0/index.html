@@ -1,0 +1,60 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="theme-color" content="#03080d">
+  <meta name="description" content="GLITCH — independent creative developer and digital designer. Personal portfolio from Night City.">
+  <title>GLITCH_ — Personal Portfolio</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link rel="stylesheet" href="style.css">
+  <script src="javascript/app.js" defer></script>
+</head>
+<body>
+  <canvas class="matrix-rain" id="matrix-rain" aria-hidden="true"></canvas>
+  <div class="matrix-intro" id="matrix-intro" aria-hidden="true">
+    <div class="intro-readout"><span>GLITCH NETWORK / BOOT SEQUENCE</span><strong>INITIALIZING SIGNAL</strong><div class="intro-meter"><i></i></div><small>ESTABLISHING SECURE CONNECTION...</small></div>
+  </div>
+  <header class="site-header">
+    <a class="brand" href="#/home" aria-label="GLITCH home">
+      <img class="nerv-mark" src="assets/nerv-wallpaper.jpg" alt="NERV">
+      <span class="brand-word">GLITCH<span>_</span></span>
+    </a>
+    <div class="header-right">
+      <div class="clock">SYS_TIME<strong id="clock">00:00:00 UTC+03</strong></div>
+      <button class="settings-trigger" type="button" data-open-menu aria-haspopup="dialog" aria-controls="route-menu">
+        <span class="gear">⚙</span> SETTINGS <span aria-hidden="true">↗</span>
+      </button>
+    </div>
+  </header>
+
+  <main id="app" tabindex="-1" aria-live="polite"></main>
+
+  <div class="menu-overlay" id="route-menu" role="dialog" aria-modal="true" aria-label="Portfolio navigation menu" aria-hidden="true">
+    <section class="terminal-board">
+      <header class="terminal-topbar">
+        <div class="terminal-brand"><span class="terminal-mark">G</span><div><small>GLITCH NETWORK / NODE 77</small><strong>CONTROL INTERFACE</strong></div></div>
+        <div class="terminal-status"><i></i> CONNECTION SECURE</div>
+        <button class="menu-close" type="button" data-close-menu aria-label="Close menu">&times;</button>
+      </header>
+      <div class="terminal-intro-grid">
+        <aside class="terminal-alert"><div><strong>NODE MAP / 05 ROUTES</strong><p>Open the identity file, project archive, contact channel, or owner upload tools.</p></div></aside>
+        <div class="terminal-headline"><small>WELCOME TO THE SYSTEM</small><h2>A NEW <em>SIGNAL</em></h2><p>I WILL CONTINUE <span>///</span> GLITCH_OS</p></div>
+      </div>
+      <nav class="terminal-options" aria-label="Portfolio pages">
+        <a class="terminal-option" href="#/profile" data-route-choice><span>01 / PERSONAL FILE</span><strong>IDENTITY</strong><b>OPEN PROFILE <i>&nearr;</i></b></a>
+        <a class="terminal-option" href="#/projects" data-route-choice><span>02 / CREATIVE INDEX</span><strong>PROJECTS</strong><b>BROWSE ARCHIVE <i>&nearr;</i></b></a>
+        <a class="terminal-option" href="#/contact" data-route-choice><span>03 / OPEN CHANNEL</span><strong>CONTACT</strong><b>SEND A SIGNAL <i>&nearr;</i></b></a>
+        <a class="terminal-option terminal-option-edit" href="#/configure" data-route-choice><span>04 / PRIVATE ACCESS</span><strong>EDIT PROFILE</strong><b>PASSWORD REQUIRED <i>&nearr;</i></b></a>
+        <a class="terminal-option terminal-option-manage" href="#/manage" data-route-choice><span>05 / OWNER TOOLS</span><strong>UPLOAD PROJECTS</strong><b>ADD FILES &amp; IMAGES <i>&nearr;</i></b></a>
+      </nav>
+      <div class="terminal-footer">
+      <div class="terminal-art"><img src="assets/neon-city-pixel.gif" alt="" aria-hidden="true"><span>NEON CITY // NODE 77</span></div>
+      </div>
+      <div class="terminal-load"><i></i><span>SYSTEMS ONLINE</span></div>
+    </section>
+  </div>
+  <div class="toast" id="toast" role="status" aria-live="polite"></div>
+</body>
+</html>
